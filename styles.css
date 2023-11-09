@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #729d52;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#container {
+  height: 80%;
+  width: 700px;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dcedc8;
+  margin: 0 auto;
+  border: 5px solid #88b169;
+  border-radius: 1rem;
+}
+
+.stopwatch-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.stopwatch-secondary {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.stopwatch-block-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 15px 10px #88b169;
+  box-shadow: 0px 0px 15px 10px #88b169;
+}
+
+.label {
+  align-self: center;
+  justify-self: center;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.timer {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  font-size: 30px;
+}
+
+.timer::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  align-self: center;
+  justify-self: center;
+
+  width: 100px;
+  height: 30px;
+
+  border-radius: 2rem;
+  border-color: #88b169;
+
+  font-size: 20px;
+}
